@@ -71,4 +71,32 @@
       location.href = 'https://wa.me/' + (RS.wa || '19548508640') + '?text=' + encodeURIComponent(msg);
     });
   }
+  // ---- latest YouTube videos (videos.json is refreshed every 3h by a GitHub Action from the channel feed)
+  var yt = document.getElementById('yt-latest');
+  if (yt && window.fetch) {
+    fetch(yt.getAttribute('data-src'), { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (d) {
+      var vids = (d.videos || []).slice(0, 3);
+      if (!vids.length) return;
+      var pt = yt.getAttribute('data-lang') === 'pt';
+      vids.forEach(function (v) {
+        var b = document.createElement('button');
+        b.className = 'yt-card'; b.type = 'button';
+        b.setAttribute('aria-label', (pt ? 'Assistir: ' : 'Play: ') + v.title);
+        var img = document.createElement('img');
+        img.src = v.thumb; img.alt = ''; img.loading = 'lazy'; img.width = 480; img.height = 360;
+        var t = document.createElement('span'); t.className = 'yt-title'; t.textContent = v.title;
+        var play = document.createElement('span'); play.className = 'yt-play'; play.setAttribute('aria-hidden', 'true');
+        b.appendChild(img); b.appendChild(play); b.appendChild(t);
+        b.addEventListener('click', function () {  // load the player only on tap (keeps the page fast)
+          var f = document.createElement('iframe');
+          f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.id) + '?autoplay=1&rel=0';
+          f.title = v.title; f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true;
+          f.className = 'yt-frame'; b.replaceWith(f);
+          gtag('event', 'video_play', { video_id: v.id, page_lang: RS.lang });
+        });
+        yt.appendChild(b);
+      });
+      document.getElementById('videos').hidden = false;
+    }).catch(function () {});
+  }
 })();
