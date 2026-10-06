@@ -15,6 +15,12 @@
   }
   var RS = window.RS || {};
 
+  // ---- remember an explicit language choice so the auto-Portuguese redirect never fights the visitor
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-setlang]');
+    if (a) { try { localStorage.setItem('rs_lang', a.getAttribute('data-setlang')); } catch (_) {} }
+  });
+
   // ---- every WhatsApp / phone click = a lead event (conversion when Ads ID is set)
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[href*="wa.me"], a[href^="tel:"]');
