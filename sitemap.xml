@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://royalstarcorp.com/</loc>
     <lastmod>2026-10-06</lastmod>
@@ -39,6 +39,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/boca-raton/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/boca-raton/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/boca-raton/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/boca-raton-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/areas/coconut-creek/</loc>
@@ -47,6 +48,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/coconut-creek/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/coconut-creek/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/coconut-creek/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/coconut-creek-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/areas/deerfield-beach/</loc>
@@ -55,6 +57,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/deerfield-beach/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/deerfield-beach/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/deerfield-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/deerfield-beach-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/areas/fort-lauderdale/</loc>
@@ -63,6 +66,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/fort-lauderdale/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/fort-lauderdale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/fort-lauderdale/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/fort-lauderdale-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/areas/margate/</loc>
@@ -71,6 +75,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/margate/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/margate/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/margate/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/margate-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/areas/pompano-beach/</loc>
@@ -79,6 +84,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/pompano-beach/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/pompano-beach/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/pompano-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/pompano-beach-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/buy-a-home/</loc>
@@ -175,6 +181,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/boca-raton/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/boca-raton/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/boca-raton/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/boca-raton-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/cidades/coconut-creek/</loc>
@@ -183,6 +190,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/coconut-creek/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/coconut-creek/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/coconut-creek/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/coconut-creek-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/cidades/deerfield-beach/</loc>
@@ -191,6 +199,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/deerfield-beach/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/deerfield-beach/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/deerfield-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/deerfield-beach-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/cidades/fort-lauderdale/</loc>
@@ -199,6 +208,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/fort-lauderdale/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/fort-lauderdale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/fort-lauderdale/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/fort-lauderdale-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/cidades/margate/</loc>
@@ -207,6 +217,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/margate/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/margate/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/margate/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/margate-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/cidades/pompano-beach/</loc>
@@ -215,6 +226,7 @@
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/pompano-beach/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/pompano-beach/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/pompano-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/pompano-beach-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/comprar-casa-na-florida/</loc>

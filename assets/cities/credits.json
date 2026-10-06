@@ -1,0 +1,62 @@
+{
+ "deerfield-beach": {
+  "title": "Deerfield Beach pier.jpg",
+  "author": "Jordon Kalilich at en.wikipedia",
+  "license": "Public domain",
+  "license_url": "",
+  "source": "https://commons.wikimedia.org/wiki/File:Deerfield_Beach_pier.jpg",
+  "w": 1600,
+  "h": 976,
+  "file": "deerfield-beach-florida.webp"
+ },
+ "pompano-beach": {
+  "title": "Pompano Beach Florida from John Knox Village Tower, January 2018 - 02.jpg",
+  "author": "Infrogmation",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Pompano_Beach_Florida_from_John_Knox_Village_Tower,_January_2018_-_02.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "pompano-beach-florida.webp"
+ },
+ "boca-raton": {
+  "title": "Palmetto Park Rd & Mizner Blvd - Boca Raton, FL.jpg",
+  "author": "Ianaré Sévi",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Palmetto_Park_Rd_%26_Mizner_Blvd_-_Boca_Raton,_FL.jpg",
+  "w": 1600,
+  "h": 695,
+  "file": "boca-raton-florida.webp"
+ },
+ "coconut-creek": {
+  "title": "Sunset in Coconut Creek Florida.jpg",
+  "author": "Abacoaseo",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sunset_in_Coconut_Creek_Florida.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "coconut-creek-florida.webp"
+ },
+ "margate": {
+  "title": "Margate Canal.jpg",
+  "author": "Ianaré Sévi",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Margate_Canal.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "margate-florida.webp"
+ },
+ "fort-lauderdale": {
+  "title": "Skyline of Fort Lauderdale, Nov-15.jpg",
+  "author": "KeanoManu",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Skyline_of_Fort_Lauderdale,_Nov-15.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "fort-lauderdale-florida.webp"
+ }
+}

@@ -99,6 +99,12 @@ input[type=text],input[type=number],select,textarea{width:100%;min-height:48px;p
 .calc-out table{width:100%;color:#dfe3ea;font-size:.9rem;margin-top:8px}
 .calc-out td{padding:2px 0}.calc-out td+td{text-align:right}
 
+/* city photo */
+.city-photo{margin:0 auto 8px}
+.city-photo img{display:block;width:100%;height:auto;border-radius:12px;aspect-ratio:auto}
+.city-photo figcaption{font-size:.8rem;color:var(--muted);margin-top:6px}
+.city-photo figcaption a{color:var(--muted)}
+
 /* latest videos */
 .videos{padding:20px 0 0}
 .yt-card{position:relative;display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);cursor:pointer;text-align:left;font:inherit;color:var(--ink)}
