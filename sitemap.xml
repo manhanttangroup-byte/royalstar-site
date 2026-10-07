@@ -33,6 +33,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/"/>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/areas/aventura/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/aventura/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/aventura/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/aventura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/aventura/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/aventura-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/areas/boca-raton/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/boca-raton/"/>
@@ -60,6 +69,15 @@
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/coconut-creek-florida.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/areas/coral-gables/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/coral-gables/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/coral-gables/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/coral-gables/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/coral-gables/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/coral-gables-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/areas/deerfield-beach/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/deerfield-beach/"/>
@@ -78,6 +96,15 @@
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/delray-beach-florida.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/areas/doral/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/doral/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/doral/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/doral/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/doral/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/doral-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/areas/fort-lauderdale/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/fort-lauderdale/"/>
@@ -85,6 +112,42 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/fort-lauderdale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/fort-lauderdale/"/>
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/fort-lauderdale-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/hollywood/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/hollywood/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/hollywood/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/hollywood/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/hollywood/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/hollywood-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/jacksonville/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/jacksonville/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/jacksonville/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/jacksonville/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/jacksonville/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/jacksonville-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/key-west/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/key-west/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/key-west/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/key-west/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/key-west/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/key-west-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/kissimmee/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/kissimmee/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/kissimmee/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/kissimmee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/kissimmee/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/kissimmee-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/areas/lauderdale-by-the-sea/</loc>
@@ -113,6 +176,42 @@
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/margate-florida.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/areas/miami-beach/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/miami-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/miami-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/miami-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/miami-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/miami-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/miami/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/miami/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/miami/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/miami/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/miami/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/miami-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/naples/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/naples/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/naples/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/naples/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/naples/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/naples-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/orlando/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/orlando/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/orlando/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/orlando/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/orlando/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/orlando-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/areas/parkland/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/parkland/"/>
@@ -128,6 +227,60 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/pompano-beach/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/pompano-beach/"/>
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/pompano-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/sarasota/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/sarasota/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/sarasota/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/sarasota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/sarasota/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/sarasota-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/st-petersburg/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/st-petersburg/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/st-petersburg/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/st-petersburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/st-petersburg/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/st-petersburg-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/sunny-isles-beach/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/sunny-isles-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/sunny-isles-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/sunny-isles-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/sunny-isles-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/sunny-isles-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/tampa/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/tampa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/tampa/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/tampa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/tampa/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/tampa-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/west-palm-beach/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/west-palm-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/west-palm-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/west-palm-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/west-palm-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/west-palm-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/areas/weston/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/weston/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/weston/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/weston/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/weston/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/weston-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/buy-a-home/</loc>
@@ -250,6 +403,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/"/>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/pt/cidades/aventura/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/aventura/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/aventura/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/aventura/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/aventura/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/aventura-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/pt/cidades/boca-raton/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/boca-raton/"/>
@@ -277,6 +439,15 @@
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/coconut-creek-florida.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/pt/cidades/coral-gables/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/coral-gables/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/coral-gables/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/coral-gables/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/coral-gables/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/coral-gables-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/pt/cidades/deerfield-beach/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/deerfield-beach/"/>
@@ -295,6 +466,15 @@
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/delray-beach-florida.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/pt/cidades/doral/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/doral/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/doral/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/doral/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/doral/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/doral-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/pt/cidades/fort-lauderdale/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/fort-lauderdale/"/>
@@ -302,6 +482,42 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/fort-lauderdale/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/fort-lauderdale/"/>
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/fort-lauderdale-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/hollywood/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/hollywood/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/hollywood/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/hollywood/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/hollywood/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/hollywood-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/jacksonville/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/jacksonville/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/jacksonville/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/jacksonville/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/jacksonville/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/jacksonville-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/key-west/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/key-west/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/key-west/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/key-west/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/key-west/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/key-west-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/kissimmee/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/kissimmee/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/kissimmee/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/kissimmee/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/kissimmee/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/kissimmee-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/cidades/lauderdale-by-the-sea/</loc>
@@ -330,6 +546,42 @@
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/margate-florida.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/pt/cidades/miami-beach/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/miami-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/miami-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/miami-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/miami-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/miami-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/miami/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/miami/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/miami/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/miami/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/miami/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/miami-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/naples/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/naples/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/naples/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/naples/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/naples/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/naples-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/orlando/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/orlando/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/orlando/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/orlando/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/orlando/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/orlando-florida.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/pt/cidades/parkland/</loc>
     <lastmod>2026-10-06</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/parkland/"/>
@@ -345,6 +597,60 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/pompano-beach/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/pompano-beach/"/>
     <image:image><image:loc>https://royalstarcorp.com/assets/cities/pompano-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/sarasota/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/sarasota/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/sarasota/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/sarasota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/sarasota/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/sarasota-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/st-petersburg/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/st-petersburg/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/st-petersburg/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/st-petersburg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/st-petersburg/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/st-petersburg-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/sunny-isles-beach/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/sunny-isles-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/sunny-isles-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/sunny-isles-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/sunny-isles-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/sunny-isles-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/tampa/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/tampa/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/tampa/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/tampa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/tampa/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/tampa-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/west-palm-beach/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/west-palm-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/west-palm-beach/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/west-palm-beach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/west-palm-beach/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/west-palm-beach-florida.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/cidades/weston/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/areas/weston/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/cidades/weston/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/cidades/weston/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/areas/weston/"/>
+    <image:image><image:loc>https://royalstarcorp.com/assets/cities/weston-florida.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/comprar-casa-na-florida/</loc>

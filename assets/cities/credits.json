@@ -88,5 +88,243 @@
   "w": 1600,
   "h": 900,
   "file": "lighthouse-point-florida.webp"
+ },
+ "aventura": {
+  "title": "Aventura Florida along 183rd Street.jpg",
+  "author": "Fredlyfish4",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Aventura_Florida_along_183rd_Street.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "aventura-florida.webp",
+  "alt": [
+   "Condo towers along the water near NE 183rd Street at sunset, Aventura, Florida",
+   "Prédios de apartamentos à beira d'água perto da NE 183rd Street ao pôr do sol, em Aventura, Flórida"
+  ]
+ },
+ "coral-gables": {
+  "title": "Miami - Biltmore hotel - 0371.jpg",
+  "author": "Jorge Royan",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Miami_-_Biltmore_hotel_-_0371.jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "coral-gables-florida.webp",
+  "alt": [
+   "The Biltmore Hotel tower seen through Mediterranean-style arches, Coral Gables, Florida",
+   "A torre do Biltmore Hotel vista entre arcos em estilo mediterrâneo, em Coral Gables, Flórida"
+  ]
+ },
+ "doral": {
+  "title": "Doral, Florida.jpg",
+  "author": "Natalialm0110",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Doral,_Florida.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "doral-florida.webp",
+  "alt": [
+   "Residential buildings around a lake with a fountain, Doral, Florida",
+   "Prédios residenciais em volta de um lago com chafariz, em Doral, Flórida"
+  ]
+ },
+ "hollywood": {
+  "title": "Hollywood Beach Boardwalk (1).jpg",
+  "author": "Tamanoeconomico",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hollywood_Beach_Boardwalk_(1).jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "hollywood-florida.webp",
+  "alt": [
+   "The Hollywood Beach Broadwalk lined with palm trees next to the ocean in Hollywood, Florida",
+   "O calçadão Hollywood Beach Broadwalk com palmeiras à beira-mar em Hollywood, Flórida"
+  ]
+ },
+ "jacksonville": {
+  "title": "Jacksonville skyline.jpg",
+  "author": "Quintin Soloviev",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Jacksonville_skyline.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "jacksonville-florida.webp",
+  "alt": [
+   "Aerial view of downtown Jacksonville and the Main Street Bridge over the St. Johns River, Jacksonville, Florida",
+   "Vista aérea do centro de Jacksonville e da ponte Main Street sobre o rio St. Johns, Jacksonville, Flórida"
+  ]
+ },
+ "key-west": {
+  "title": "Southernmost point buoy, NE view.jpg",
+  "author": "Radomianin",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Southernmost_point_buoy,_NE_view.jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "key-west-florida.webp",
+  "alt": [
+   "The Southernmost Point buoy by the ocean in Key West, Florida",
+   "A boia do Southernmost Point, à beira-mar, em Key West, Flórida"
+  ]
+ },
+ "kissimmee": {
+  "title": "Kissimmee Lakefront Sunrise (19054207665).jpg",
+  "author": "Chad Sparkes",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Kissimmee_Lakefront_Sunrise_(19054207665).jpg",
+  "w": 1600,
+  "h": 802,
+  "file": "kissimmee-florida.webp",
+  "alt": [
+   "The lighthouse at Kissimmee Lakefront Park on Lake Tohopekaliga at sunrise, Kissimmee, Florida",
+   "O farol do Lakefront Park, no lago Tohopekaliga, ao nascer do sol em Kissimmee, Flórida"
+  ]
+ },
+ "miami-beach": {
+  "title": "Ocean Drive in the Miami Beach Art Deco Historic District.jpg",
+  "author": "Robbschultz69",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Ocean_Drive_in_the_Miami_Beach_Art_Deco_Historic_District.jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "miami-beach-florida.webp",
+  "alt": [
+   "Art Deco hotels and palm trees along Ocean Drive in South Beach, Miami Beach, Florida",
+   "Hotéis Art Déco e palmeiras na Ocean Drive, em South Beach, Miami Beach, Flórida"
+  ]
+ },
+ "miami": {
+  "title": "Downtown Miami and Brickell, 31 December 2023.jpg",
+  "author": "Phillip Pessar",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Downtown_Miami_and_Brickell,_31_December_2023.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "miami-florida.webp",
+  "alt": [
+   "High-rise towers of Brickell and Downtown Miami at the mouth of the Miami River, Miami, Florida",
+   "Torres de Brickell e Downtown na foz do rio Miami, em Miami, Flórida"
+  ]
+ },
+ "naples": {
+  "title": "Naples Pier At Sunset Florida United States Travel Photography (194139203).jpeg",
+  "author": "Giuseppe Milo",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Naples_Pier_At_Sunset_Florida_United_States_Travel_Photography_(194139203).jpeg",
+  "w": 1600,
+  "h": 900,
+  "file": "naples-florida.webp",
+  "alt": [
+   "The Naples Pier at sunset over the Gulf, Naples, Florida",
+   "O Naples Pier ao pôr do sol no Golfo, Naples, Flórida"
+  ]
+ },
+ "orlando": {
+  "title": "Lake Eola and Orlando skyline.jpg",
+  "author": "Michael Rivera",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Lake_Eola_and_Orlando_skyline.jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "orlando-florida.webp",
+  "alt": [
+   "Lake Eola fountain in front of the downtown Orlando skyline, Florida",
+   "A fonte do lago Eola diante dos prédios do centro de Orlando, Flórida"
+  ]
+ },
+ "sarasota": {
+  "title": "Sarasota Skyline.jpeg",
+  "author": "Cullen Morgan",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sarasota_Skyline.jpeg",
+  "w": 1600,
+  "h": 900,
+  "file": "sarasota-florida.webp",
+  "alt": [
+   "Downtown Sarasota skyline across Sarasota Bay, seen from Bird Key, Sarasota, Florida",
+   "Prédios do centro de Sarasota vistos do outro lado da baía, a partir de Bird Key, Sarasota, Flórida"
+  ]
+ },
+ "st-petersburg": {
+  "title": "St. Petersburg Florida skyline at sunrise 1.jpg",
+  "author": "Andrew Heneen",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:St._Petersburg_Florida_skyline_at_sunrise_1.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "st-petersburg-florida.webp",
+  "alt": [
+   "Downtown St. Petersburg condo towers reflected in the marina at sunrise, St. Petersburg, Florida",
+   "Prédios do centro de St. Petersburg refletidos na marina ao amanhecer, St. Petersburg, Flórida"
+  ]
+ },
+ "sunny-isles-beach": {
+  "title": "Sunny Isles Beach aerial skyline 2014.jpg",
+  "author": "Andres M. Bernal",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sunny_Isles_Beach_aerial_skyline_2014.jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "sunny-isles-beach-florida.webp",
+  "alt": [
+   "Aerial view of oceanfront condo towers along the beach, Sunny Isles Beach, Florida",
+   "Vista aérea das torres de apartamentos de frente para o mar, em Sunny Isles Beach, Flórida"
+  ]
+ },
+ "tampa": {
+  "title": "Downtown Tampa, Florida.jpg",
+  "author": "Clément Bardot",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Downtown_Tampa,_Florida.jpg",
+  "w": 1600,
+  "h": 919,
+  "file": "tampa-florida.webp",
+  "alt": [
+   "Downtown Tampa skyline above the Hillsborough River, Tampa, Florida",
+   "Prédios do centro de Tampa às margens do rio Hillsborough, Tampa, Flórida"
+  ]
+ },
+ "west-palm-beach": {
+  "title": "West Palm Beach - Waterfront - Intracoastal Waterway & Downtown Skyline - Panorama (15300572403).jpg",
+  "author": "Jared",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:West_Palm_Beach_-_Waterfront_-_Intracoastal_Waterway_%26_Downtown_Skyline_-_Panorama_(15300572403).jpg",
+  "w": 1600,
+  "h": 800,
+  "file": "west-palm-beach-florida.webp",
+  "alt": [
+   "Downtown West Palm Beach skyline seen across the Intracoastal Waterway, Florida",
+   "Prédios do centro de West Palm Beach vistos do outro lado do Intracoastal, Flórida"
+  ]
+ },
+ "weston": {
+  "title": "Town Center Park, Weston, Florida February 24, 2022 C.jpg",
+  "author": "AITFFan1",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Town_Center_Park,_Weston,_Florida_February_24,_2022_C.jpg",
+  "w": 1600,
+  "h": 1000,
+  "file": "weston-florida.webp",
+  "alt": [
+   "Royal palms and flags at Town Center Park by the lake in Weston, Florida",
+   "Palmeiras e bandeiras no Town Center Park, à beira do lago, em Weston, Flórida"
+  ]
  }
 }
