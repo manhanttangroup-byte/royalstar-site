@@ -13,6 +13,9 @@ FEED = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "m": "http://search.yahoo.com/mrss/"}
 MAX = 6
 EXCLUDE = {"o1kBrWNfga8"}  # 4.5s logo intro: not a "meet Rui" video
+# ponytail: shown only while the channel has no other public video; the first real upload replaces it
+FALLBACK = [{"id": "o1kBrWNfga8", "title": "Royal Star Corp", "published": "2026-10-06", "short": False,
+             "thumb": "https://i.ytimg.com/vi/o1kBrWNfga8/hqdefault.jpg"}]
 
 def fetch():
     req = urllib.request.Request(FEED, headers={"User-Agent": "Mozilla/5.0 (royalstarcorp.com feed)"})
@@ -34,13 +37,15 @@ def fetch():
 if __name__ == "__main__":
     path = sys.argv[1] if len(sys.argv) > 1 else "videos.json"
     try:
-        videos = fetch()
+        videos = fetch() or FALLBACK
     except Exception as err:  # keep the previous list rather than blanking the homepage
-        import os
-        if not os.path.exists(path):  # fresh build: write an empty list so the site never links a missing file
-            open(path, "w", encoding="utf-8").write(json.dumps({"channel": f"https://www.youtube.com/channel/{CHANNEL_ID}", "videos": []}))
-        print("feed unavailable, keeping existing file:", err)
-        sys.exit(0)
+        try:
+            if json.load(open(path, encoding="utf-8"))["videos"]:
+                print("feed unavailable, keeping existing file:", err); sys.exit(0)
+        except (FileNotFoundError, ValueError, KeyError):
+            pass
+        print("feed unavailable, using logo intro:", err)
+        videos = FALLBACK
     data = json.dumps({"channel": f"https://www.youtube.com/channel/{CHANNEL_ID}", "videos": videos}, ensure_ascii=False, indent=1)
     try:
         if open(path, encoding="utf-8").read() == data:
