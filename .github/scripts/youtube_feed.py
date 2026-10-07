@@ -36,6 +36,9 @@ if __name__ == "__main__":
     try:
         videos = fetch()
     except Exception as err:  # keep the previous list rather than blanking the homepage
+        import os
+        if not os.path.exists(path):  # fresh build: write an empty list so the site never links a missing file
+            open(path, "w", encoding="utf-8").write(json.dumps({"channel": f"https://www.youtube.com/channel/{CHANNEL_ID}", "videos": []}))
         print("feed unavailable, keeping existing file:", err)
         sys.exit(0)
     data = json.dumps({"channel": f"https://www.youtube.com/channel/{CHANNEL_ID}", "videos": videos}, ensure_ascii=False, indent=1)

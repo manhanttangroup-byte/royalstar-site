@@ -58,5 +58,35 @@
   "w": 1600,
   "h": 900,
   "file": "fort-lauderdale-florida.webp"
+ },
+ "boynton-beach": {
+  "title": "Boynton Beach, Florida.jpg",
+  "author": "Quintin Soloviev",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Boynton_Beach,_Florida.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "boynton-beach-florida.webp"
+ },
+ "delray-beach": {
+  "title": "Atlantic Avenue Bridge in Delray Beach FL opened (2018).jpg",
+  "author": "Brother Ralphie from Columbus, Ohio, USA",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Atlantic_Avenue_Bridge_in_Delray_Beach_FL_opened_(2018).jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "delray-beach-florida.webp"
+ },
+ "lighthouse-point": {
+  "title": "Bateau pénétrant dans l'Inlet de Lighthouse Point, Florida. Boat sailing in the Inlet - panoramio.jpg",
+  "author": "Richard Mc Neil",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bateau_p%C3%A9n%C3%A9trant_dans_l%27Inlet_de_Lighthouse_Point,_Florida._Boat_sailing_in_the_Inlet_-_panoramio.jpg",
+  "w": 1600,
+  "h": 900,
+  "file": "lighthouse-point-florida.webp"
  }
 }
