@@ -32,8 +32,8 @@
   // Bottom sheet on phones (Google penalises full-screen mobile interstitials), corner card on desktop.
   // Once per visitor: closing hides it for 7 days; leaving a phone (here or in any form) hides it for good.
   (function leadPopup() {
-    var pt = RS.lang === 'pt', skip = { privacy: 1, terms: 1, accessibility: 1, contact: 1 };
-    if (skip[RS.key] || store('rs_lead_done') || +(store('rs_pop_until') || 0) > Date.now()) return;
+    var pt = RS.lang === 'pt';  // every page, EN + PT
+    if (store('rs_lead_done') || +(store('rs_pop_until') || 0) > Date.now()) return;
     if (/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)) return;
     var T = pt ? {
       t1: 'Receba os preços atuais de imóveis na Flórida. Qual cidade?', other: 'Outra cidade / ainda não sei', next: 'Continuar',
@@ -72,8 +72,9 @@
       document.body.appendChild(box);
       box.querySelector('.lp-x').addEventListener('click', close);
       document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && box.isConnected) close(); });
-      var opts = (RS.cities || []).map(function (c) { return '<option>' + esc(c) + '</option>'; }).join('');
-      step('<form><label class="lp-title" id="lp-t" for="lp-city">' + T.t1 + '</label><select id="lp-city" required><option value="">—</option>' + opts +
+      var list = (RS.cities || []).filter(function (c) { return c !== 'Miami'; });  // Miami first and pre-selected
+      var opts = '<option selected>Miami</option>' + list.map(function (c) { return '<option>' + esc(c) + '</option>'; }).join('');
+      step('<form><label class="lp-title" id="lp-t" for="lp-city">' + T.t1 + '</label><select id="lp-city" required>' + opts +
            '<option>' + T.other + '</option></select><button class="btn" type="submit">' + T.next + '</button></form>', function (f) {
         city = f.querySelector('select').value;
         step('<form><label class="lp-title" id="lp-t" for="lp-tel">' + C(T.t2) + '</label><input id="lp-tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="' + T.ph +
