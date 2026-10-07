@@ -14,6 +14,16 @@
     if (real(ADS_ID)) gtag('config', ADS_ID);
   }
   var RS = window.RS || {};
+  var LEADS_URL = 'https://script.google.com/macros/s/AKfycbzIgof3ehZQGZ-uN2R-G_j1KzunlzAWucOWLKAvedQ3aTxXCBhShZLj_Vwnl8mqQiRreg/exec'; // Google Apps Script: saves to "Royal Star — Leads do site" sheet + emails Rui
+  function sendLead(fields) {  // fire-and-forget; works even as the page navigates to WhatsApp
+    try {
+      var p = new URLSearchParams(location.search), body = new URLSearchParams(fields);
+      ['utm_source', 'utm_campaign', 'utm_content'].forEach(function (k) { if (p.get(k)) body.set(k, p.get(k)); });
+      body.set('pagina', location.pathname); body.set('lang', RS.lang || '');
+      if (!(navigator.sendBeacon && navigator.sendBeacon(LEADS_URL, body)))
+        fetch(LEADS_URL, { method: 'POST', mode: 'no-cors', body: body, keepalive: true });
+    } catch (e) {}
+  }
 
   // ---- remember an explicit language choice so the auto-Portuguese redirect never fights the visitor
   document.addEventListener('click', function (e) {
@@ -61,14 +71,19 @@
       e.preventDefault();
       var pt = lead.getAttribute('data-lang') === 'pt', f = lead.elements, err = document.getElementById('lead-err');
       if (!f.nome.value.trim()) { err.textContent = pt ? 'Escreva seu nome.' : 'Please enter your name.'; f.nome.focus(); return; }
+      if (f.tel.value.replace(/\D/g, '').length < 8) { err.textContent = pt ? 'Informe seu WhatsApp com DDD/código do país.' : 'Please enter your WhatsApp/phone with country code.'; f.tel.focus(); return; }
+      if (f.website && f.website.value) return;  // bot
       if (!f.ok.checked) { err.textContent = pt ? 'Marque a caixa de consentimento para continuar.' : 'Please tick the consent box to continue.'; f.ok.focus(); return; }
       var sell = lead.getAttribute('data-key') === 'sell';
       var msg = (pt ? 'Olá Rui, aqui é ' : 'Hi Rui, this is ') + f.nome.value.trim() + '. ' +
         (sell ? (pt ? 'Quero uma avaliação do meu imóvel' : "I'd like a market valuation") + (f.end && f.end.value.trim() ? ': ' + f.end.value.trim() : '') + '. ' : '') +
         (f.msg.value.trim() ? f.msg.value.trim() + ' ' : '') + '(' + (RS.lang || '') + '-' + (RS.key || '') + '-form)';
+      sendLead({ nome: f.nome.value.trim(), tel: f.tel.value.trim(), endereco: f.end ? f.end.value.trim() : '',
+                 msg: f.msg.value.trim(), codigo: (RS.lang || '') + '-' + (RS.key || '') + '-form' });
       gtag('event', 'whatsapp_click', { page_key: RS.key, page_lang: RS.lang, link_location: 'form' });
+      gtag('event', 'generate_lead', { page_key: RS.key, page_lang: RS.lang });
       if (real(ADS_ID) && real(ADS_LABEL)) gtag('event', 'conversion', { send_to: ADS_ID + '/' + ADS_LABEL });
-      location.href = 'https://wa.me/' + (RS.wa || '19548508640') + '?text=' + encodeURIComponent(msg);
+      setTimeout(function () { location.href = 'https://wa.me/' + (RS.wa || '19548508640') + '?text=' + encodeURIComponent(msg); }, 150);
     });
   }
   // ---- latest YouTube videos (videos.json is refreshed every 3h by a GitHub Action from the channel feed)

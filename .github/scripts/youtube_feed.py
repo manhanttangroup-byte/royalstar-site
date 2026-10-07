@@ -12,13 +12,16 @@ CHANNEL_ID = "UC4b8oRS_Zt-a2Me0gyzG_yA"  # @royalstarrealestate
 FEED = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "m": "http://search.yahoo.com/mrss/"}
 MAX = 6
+EXCLUDE = {"o1kBrWNfga8"}  # 4.5s logo intro: not a "meet Rui" video
 
 def fetch():
     req = urllib.request.Request(FEED, headers={"User-Agent": "Mozilla/5.0 (royalstarcorp.com feed)"})
     root = ET.fromstring(urllib.request.urlopen(req, timeout=20).read())
     out = []
-    for e in root.findall("a:entry", NS)[:MAX]:
+    for e in root.findall("a:entry", NS):
         vid = e.findtext("yt:videoId", namespaces=NS)
+        if vid in EXCLUDE or len(out) >= MAX:
+            continue
         out.append({
             "id": vid,
             "title": e.findtext("a:title", namespaces=NS) or "",
