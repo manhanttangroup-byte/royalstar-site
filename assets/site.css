@@ -29,7 +29,11 @@ p,ul,ol{margin:0 0 1em}
 .menu summary::-webkit-details-marker{display:none}
 .menu[open] ul{position:absolute;left:0;right:0;top:60px;background:var(--navy);padding:8px 16px 16px;border-top:1px solid #23355e}
 .nav-wide{display:none}
-.lang{color:var(--gold);font-weight:700;text-decoration:none;padding:10px 4px;font-size:.9rem;white-space:nowrap}
+.langs{list-style:none;display:flex;align-items:center;margin:0;padding:0}
+.langs li+li::before{content:"·";color:var(--silver)}
+.lang{display:inline-block;color:var(--gold);font-weight:700;text-decoration:none;padding:12px 6px;min-width:36px;text-align:center;font-size:.9rem;white-space:nowrap}
+.lang:hover{text-decoration:underline}
+.lang-full{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap} /* screen readers hear "Português", eyes see "PT" */
 
 /* hero (home) */
 .hero{background:var(--navy);color:#fff;padding:40px 0 48px}

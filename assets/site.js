@@ -1,7 +1,7 @@
 // Royal Star Corp — site behaviour: Google tag (inert until real IDs), WhatsApp click tracking, calculator, lead form.
 (function () {
   // ---- Google tag: replace the IDs; while they contain XXXX nothing loads.
-  var GA4_ID = 'G-XXXXXXXXXX', ADS_ID = 'AW-XXXXXXXXX', ADS_LABEL = 'XXXXXXXXXXXXXXXXXXX';
+  var GA4_ID = 'G-D7B3VBQRDS', ADS_ID = 'AW-XXXXXXXXX', ADS_LABEL = 'XXXXXXXXXXXXXXXXXXX';
   var real = function (id) { return id && id.indexOf('XXXX') < 0; };
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
@@ -14,6 +14,7 @@
     if (real(ADS_ID)) gtag('config', ADS_ID);
   }
   var RS = window.RS || {};
+  function tr(en, pt, es) { return RS.lang === 'pt' ? pt : RS.lang === 'es' ? es : en; }  // UI text in the page language
   var LEADS_URL = 'https://script.google.com/macros/s/AKfycbzIgof3ehZQGZ-uN2R-G_j1KzunlzAWucOWLKAvedQ3aTxXCBhShZLj_Vwnl8mqQiRreg/exec'; // Google Apps Script: saves to "Royal Star — Leads do site" sheet + emails Rui
   function sendLead(fields) {  // fire-and-forget; works even as the page navigates to WhatsApp
     try {
@@ -32,10 +33,17 @@
   // Bottom sheet on phones (Google penalises full-screen mobile interstitials), corner card on desktop.
   // Once per visitor: closing hides it for 7 days; leaving a phone (here or in any form) hides it for good.
   (function leadPopup() {
-    var pt = RS.lang === 'pt';  // every page, EN + PT
+    var pt = RS.lang === 'pt', es = RS.lang === 'es';  // every page, EN + PT + ES
     if (store('rs_lead_done') || +(store('rs_pop_until') || 0) > Date.now()) return;
     if (/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)) return;
-    var T = pt ? {
+    var T = es ? {
+      t1: 'Reciba los precios actuales de propiedades en Florida. ¿Qué ciudad?', other: 'Otra ciudad / todavía no sé', next: 'Continuar',
+      t2: '¿A qué WhatsApp le envía Rui los precios de {c}?', ph: '+1 954 …', fl: 'Florida', ask: 'Pidió los precios actuales de propiedades en ',
+      consent: 'Al continuar, usted acepta que Rui Cunha (Royal Star Corp) lo contacte por WhatsApp, teléfono o email. Sin spam.',
+      bad: 'Revise el número, con el código de país.', t3: '¡Recibido! ¿Cómo debe llamarle Rui?', name: 'Su nombre', email: 'Su email (opcional)',
+      send: 'Enviar', t4: '¡Listo! Rui le enviará los precios de {c} por WhatsApp.', t4b: '¿Quiere adelantar? Escríbale ahora:', wa: 'Escribir por WhatsApp', call: 'Llamar',
+      close: 'Cerrar', waMsg: '¡Hola Rui! Quiero saber más sobre propiedades en '
+    } : pt ? {
       t1: 'Receba os preços atuais de imóveis na Flórida. Qual cidade?', other: 'Outra cidade / ainda não sei', next: 'Continuar',
       t2: 'Para qual WhatsApp o Rui manda os preços de {c}?', ph: '+55 11 …', fl: 'Flórida', ask: 'Pediu os preços atuais de imóveis em ',
       consent: 'Ao continuar, você aceita receber contato do Rui Cunha (Royal Star Corp) por WhatsApp, telefone ou email. Sem spam.',
@@ -122,8 +130,7 @@
   // ---- mortgage calculator
   var calc = document.getElementById('calc');
   if (calc) {
-    var pt = calc.getAttribute('data-lang') === 'pt';
-    var money = function (n) { return 'US$ ' + Math.round(n).toLocaleString(pt ? 'pt-BR' : 'en-US'); };
+    var money = function (n) { return 'US$ ' + Math.round(n).toLocaleString(tr('en-US', 'pt-BR', 'es-US')); };
     var v = function (id) { return parseFloat(document.getElementById(id).value) || 0; };
     var run = function () {
       var price = v('c-price'), down = price * v('c-down') / 100, loan = Math.max(price - down, 0);
@@ -132,12 +139,12 @@
       var tax = price * v('c-tax') / 100 / 12, ins = v('c-ins') / 12, hoa = v('c-hoa');
       var total = pi + tax + ins + hoa;
       document.getElementById('c-out').innerHTML =
-        (pt ? 'Parcela mensal estimada' : 'Estimated monthly payment') + '<b>' + money(total) + '</b><table>' +
-        '<tr><td>' + (pt ? 'Entrada' : 'Down payment') + '</td><td>' + money(down) + '</td></tr>' +
-        '<tr><td>' + (pt ? 'Valor financiado' : 'Loan amount') + '</td><td>' + money(loan) + '</td></tr>' +
-        '<tr><td>' + (pt ? 'Principal + juros' : 'Principal & interest') + '</td><td>' + money(pi) + '</td></tr>' +
-        '<tr><td>' + (pt ? 'Imposto predial' : 'Property tax') + '</td><td>' + money(tax) + '</td></tr>' +
-        '<tr><td>' + (pt ? 'Seguro' : 'Insurance') + '</td><td>' + money(ins) + '</td></tr>' +
+        tr('Estimated monthly payment', 'Parcela mensal estimada', 'Pago mensual estimado') + '<b>' + money(total) + '</b><table>' +
+        '<tr><td>' + tr('Down payment', 'Entrada', 'Pago inicial') + '</td><td>' + money(down) + '</td></tr>' +
+        '<tr><td>' + tr('Loan amount', 'Valor financiado', 'Monto del préstamo') + '</td><td>' + money(loan) + '</td></tr>' +
+        '<tr><td>' + tr('Principal & interest', 'Principal + juros', 'Capital e intereses') + '</td><td>' + money(pi) + '</td></tr>' +
+        '<tr><td>' + tr('Property tax', 'Imposto predial', 'Impuesto a la propiedad') + '</td><td>' + money(tax) + '</td></tr>' +
+        '<tr><td>' + tr('Insurance', 'Seguro', 'Seguro') + '</td><td>' + money(ins) + '</td></tr>' +
         '<tr><td>HOA</td><td>' + money(hoa) + '</td></tr></table>';
     };
     calc.addEventListener('input', run); run();
@@ -145,15 +152,16 @@
     if (cl) cl.addEventListener('submit', function (e) {
       e.preventDefault();
       var tel = cl.tel.value.trim(), out = cl.querySelector('.lp-err');
-      if (tel.replace(/\D/g, '').length < 8) { out.textContent = pt ? 'Confira o número, com DDD e código do país.' : 'Please check the number, including country code.'; return; }
+      if (tel.replace(/\D/g, '').length < 8) { out.textContent = tr('Please check the number, including country code.', 'Confira o número, com DDD e código do país.', 'Revise el número, con el código de país.'); return; }
       if (cl.website.value) return;  // bot
-      var sim = (pt ? 'Simulação: imóvel ' : 'Simulation: home ') + money(v('c-price')) + ', ' + (pt ? 'entrada ' : 'down ') + v('c-down') + '%, ' +
-        (pt ? 'juros ' : 'rate ') + v('c-rate') + '%, ' + v('c-term') + (pt ? ' anos. Parcela estimada: ' : ' yrs. Est. payment: ') +
-        document.querySelector('#c-out b').textContent + (pt ? '/mês' : '/mo');
+      var sim = tr('Simulation: home ', 'Simulação: imóvel ', 'Simulación: propiedad ') + money(v('c-price')) + ', ' + tr('down ', 'entrada ', 'pago inicial ') + v('c-down') + '%, ' +
+        tr('rate ', 'juros ', 'tasa ') + v('c-rate') + '%, ' + v('c-term') + tr(' yrs. Est. payment: ', ' anos. Parcela estimada: ', ' años. Pago estimado: ') +
+        document.querySelector('#c-out b').textContent + tr('/mo', '/mês', '/mes');
       sendLead({ tel: tel, msg: sim, codigo: (RS.lang || '') + '-calculator-sim' });
       gtag('event', 'generate_lead', { page_key: RS.key, page_lang: RS.lang, link_location: 'calculator' }); convert();
-      cl.innerHTML = '<p class="calc-lead-ok">' + (pt ? 'Pronto! O Rui vai mandar esta simulação no seu WhatsApp e ajustar para o seu caso.' :
-        'Done! Rui will send this simulation to your WhatsApp and adjust it to your case.') + '</p>';
+      cl.innerHTML = '<p class="calc-lead-ok">' + tr('Done! Rui will send this simulation to your WhatsApp and adjust it to your case.',
+        'Pronto! O Rui vai mandar esta simulação no seu WhatsApp e ajustar para o seu caso.',
+        '¡Listo! Rui le enviará esta simulación por WhatsApp y la ajustará a su caso.') + '</p>';
     });
   }
 
@@ -162,14 +170,14 @@
   if (lead) {
     lead.addEventListener('submit', function (e) {
       e.preventDefault();
-      var pt = lead.getAttribute('data-lang') === 'pt', f = lead.elements, err = document.getElementById('lead-err');
-      if (!f.nome.value.trim()) { err.textContent = pt ? 'Escreva seu nome.' : 'Please enter your name.'; f.nome.focus(); return; }
-      if (f.tel.value.replace(/\D/g, '').length < 8) { err.textContent = pt ? 'Informe seu WhatsApp com DDD/código do país.' : 'Please enter your WhatsApp/phone with country code.'; f.tel.focus(); return; }
+      var f = lead.elements, err = document.getElementById('lead-err');
+      if (!f.nome.value.trim()) { err.textContent = tr('Please enter your name.', 'Escreva seu nome.', 'Escriba su nombre.'); f.nome.focus(); return; }
+      if (f.tel.value.replace(/\D/g, '').length < 8) { err.textContent = tr('Please enter your WhatsApp/phone with country code.', 'Informe seu WhatsApp com DDD/código do país.', 'Escriba su WhatsApp/teléfono con el código de país.'); f.tel.focus(); return; }
       if (f.website && f.website.value) return;  // bot
-      if (!f.ok.checked) { err.textContent = pt ? 'Marque a caixa de consentimento para continuar.' : 'Please tick the consent box to continue.'; f.ok.focus(); return; }
+      if (!f.ok.checked) { err.textContent = tr('Please tick the consent box to continue.', 'Marque a caixa de consentimento para continuar.', 'Marque la casilla de consentimiento para continuar.'); f.ok.focus(); return; }
       var sell = lead.getAttribute('data-key') === 'sell';
-      var msg = (pt ? 'Olá Rui, aqui é ' : 'Hi Rui, this is ') + f.nome.value.trim() + '. ' +
-        (sell ? (pt ? 'Quero uma avaliação do meu imóvel' : "I'd like a market valuation") + (f.end && f.end.value.trim() ? ': ' + f.end.value.trim() : '') + '. ' : '') +
+      var msg = tr('Hi Rui, this is ', 'Olá Rui, aqui é ', 'Hola Rui, soy ') + f.nome.value.trim() + '. ' +
+        (sell ? tr("I'd like a market valuation", 'Quero uma avaliação do meu imóvel', 'Quiero una valoración de mi propiedad') + (f.end && f.end.value.trim() ? ': ' + f.end.value.trim() : '') + '. ' : '') +
         (f.msg.value.trim() ? f.msg.value.trim() + ' ' : '') + '(' + (RS.lang || '') + '-' + (RS.key || '') + '-form)';
       sendLead({ nome: f.nome.value.trim(), tel: f.tel.value.trim(), endereco: f.end ? f.end.value.trim() : '',
                  msg: f.msg.value.trim(), codigo: (RS.lang || '') + '-' + (RS.key || '') + '-form' });
@@ -184,11 +192,10 @@
     fetch(yt.getAttribute('data-src'), { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (d) {
       var vids = (d.videos || []).slice(0, 3);
       if (!vids.length) return;
-      var pt = yt.getAttribute('data-lang') === 'pt';
       vids.forEach(function (v) {
         var b = document.createElement('button');
         b.className = 'yt-card'; b.type = 'button';
-        b.setAttribute('aria-label', (pt ? 'Assistir: ' : 'Play: ') + v.title);
+        b.setAttribute('aria-label', tr('Play: ', 'Assistir: ', 'Ver: ') + v.title);
         var img = document.createElement('img');
         img.src = v.thumb; img.alt = ''; img.loading = 'lazy'; img.width = 480; img.height = 360;
         var t = document.createElement('span'); t.className = 'yt-title'; t.textContent = v.title;
