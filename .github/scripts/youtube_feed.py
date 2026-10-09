@@ -12,10 +12,10 @@ CHANNEL_ID = "UC4b8oRS_Zt-a2Me0gyzG_yA"  # @royalstarrealestate
 FEED = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "m": "http://search.yahoo.com/mrss/"}
 MAX = 6
-EXCLUDE = {"o1kBrWNfga8"}  # 4.5s logo intro: not a "meet Rui" video
+EXCLUDE = {"o1kBrWNfga8", "hJUvYBQMzOU"}  # logo intros (old 4.5s + 2026 animated): not "meet Rui" videos
 # ponytail: shown only while the channel has no other public video; the first real upload replaces it
-FALLBACK = [{"id": "o1kBrWNfga8", "title": "Royal Star Corp", "published": "2026-10-06", "short": False,
-             "thumb": "https://i.ytimg.com/vi/o1kBrWNfga8/hqdefault.jpg"}]
+FALLBACK = [{"id": "hJUvYBQMzOU", "title": "Royal Star Corp — Imóveis em toda a Flórida", "published": "2026-10-09", "short": False,
+             "thumb": "https://i.ytimg.com/vi/hJUvYBQMzOU/hqdefault.jpg"}]
 
 def fetch():
     req = urllib.request.Request(FEED, headers={"User-Agent": "Mozilla/5.0 (royalstarcorp.com feed)"})
@@ -40,7 +40,7 @@ if __name__ == "__main__":
         videos = fetch() or FALLBACK
     except Exception as err:  # keep the previous list rather than blanking the homepage
         try:
-            if json.load(open(path, encoding="utf-8"))["videos"]:
+            if [v for v in json.load(open(path, encoding="utf-8"))["videos"] if v["id"] not in EXCLUDE]:  # real videos only
                 print("feed unavailable, keeping existing file:", err); sys.exit(0)
         except (FileNotFoundError, ValueError, KeyError):
             pass
