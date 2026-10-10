@@ -2,11 +2,46 @@
  "channel": "https://www.youtube.com/channel/UC4b8oRS_Zt-a2Me0gyzG_yA",
  "videos": [
   {
-   "id": "hJUvYBQMzOU",
-   "title": "Royal Star Corp — Imóveis em toda a Flórida",
+   "id": "PAtfMi8S1CM",
+   "title": "POV: você mora em Miami",
    "published": "2026-10-09",
-   "short": false,
-   "thumb": "https://i.ytimg.com/vi/hJUvYBQMzOU/hqdefault.jpg"
+   "short": true,
+   "thumb": "https://i.ytimg.com/vi/PAtfMi8S1CM/hqdefault.jpg"
+  },
+  {
+   "id": "L4lcRGj8ub0",
+   "title": "POV: domingo em Fort Lauderdale",
+   "published": "2026-10-09",
+   "short": true,
+   "thumb": "https://i.ytimg.com/vi/L4lcRGj8ub0/hqdefault.jpg"
+  },
+  {
+   "id": "yA1skeCN1Gk",
+   "title": "POV: você mora em Orlando",
+   "published": "2026-10-09",
+   "short": true,
+   "thumb": "https://i.ytimg.com/vi/yA1skeCN1Gk/hqdefault.jpg"
+  },
+  {
+   "id": "k6bhpnbb1hs",
+   "title": "Comprar imóvel nos EUA dá green card? A resposta direta",
+   "published": "2026-10-09",
+   "short": true,
+   "thumb": "https://i.ytimg.com/vi/k6bhpnbb1hs/hqdefault.jpg"
+  },
+  {
+   "id": "ohxE_rDBbtg",
+   "title": "Quanto custa uma casa na Flórida em 2026? Em dólar e em reais",
+   "published": "2026-10-09",
+   "short": true,
+   "thumb": "https://i.ytimg.com/vi/ohxE_rDBbtg/hqdefault.jpg"
+  },
+  {
+   "id": "jezSK5BgtbI",
+   "title": "Vale a pena investir em imóvel nos EUA? Prós, contras e números",
+   "published": "2026-10-09",
+   "short": true,
+   "thumb": "https://i.ytimg.com/vi/jezSK5BgtbI/hqdefault.jpg"
   }
  ]
 }

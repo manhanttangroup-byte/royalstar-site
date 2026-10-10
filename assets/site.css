@@ -120,6 +120,9 @@ input[type=text],input[type=number],select,textarea{width:100%;min-height:48px;p
 .yt-card:hover .yt-play{background:#c00}
 .yt-title{display:block;padding:12px 14px;font-weight:700}
 .yt-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
+.yt-grid.shorts{grid-template-columns:repeat(3,1fr);gap:10px}.yt-grid.shorts>:first-child{grid-row:auto}
+.shorts .yt-card img,.shorts .yt-frame{aspect-ratio:9/16}.shorts .yt-play{top:45%}.shorts .yt-title{padding:8px 10px;font-size:.85rem}
+@media (min-width:860px){.yt-grid.shorts{grid-template-columns:repeat(3,minmax(0,260px));justify-content:center}}
 
 .hp{position:absolute;left:-5000px;width:1px;height:1px;overflow:hidden}
 

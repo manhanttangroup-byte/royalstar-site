@@ -13,9 +13,16 @@ FEED = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "m": "http://search.yahoo.com/mrss/"}
 MAX = 6
 EXCLUDE = {"o1kBrWNfga8", "hJUvYBQMzOU"}  # logo intros (old 4.5s + 2026 animated): not "meet Rui" videos
-# ponytail: shown only while the channel has no other public video; the first real upload replaces it
-FALLBACK = [{"id": "hJUvYBQMzOU", "title": "Royal Star Corp — Imóveis em toda a Flórida", "published": "2026-10-09", "short": False,
-             "thumb": "https://i.ytimg.com/vi/hJUvYBQMzOU/hqdefault.jpg"}]
+# ponytail: YouTube's RSS feed 404s for this channel for now (new channels), so this hand-kept list of public
+# Shorts is used whenever the feed fails or is empty. Once the feed works, it takes over automatically.
+FALLBACK = [{"id": i, "title": t, "published": "2026-10-09", "short": True, "thumb": f"https://i.ytimg.com/vi/{i}/hqdefault.jpg"} for i, t in [
+    ("PAtfMi8S1CM", "POV: você mora em Miami"),
+    ("L4lcRGj8ub0", "POV: domingo em Fort Lauderdale"),
+    ("yA1skeCN1Gk", "POV: você mora em Orlando"),
+    ("k6bhpnbb1hs", "Comprar imóvel nos EUA dá green card? A resposta direta"),
+    ("ohxE_rDBbtg", "Quanto custa uma casa na Flórida em 2026? Em dólar e em reais"),
+    ("jezSK5BgtbI", "Vale a pena investir em imóvel nos EUA? Prós, contras e números"),
+]]
 
 def fetch():
     req = urllib.request.Request(FEED, headers={"User-Agent": "Mozilla/5.0 (royalstarcorp.com feed)"})
@@ -39,12 +46,7 @@ if __name__ == "__main__":
     try:
         videos = fetch() or FALLBACK
     except Exception as err:  # keep the previous list rather than blanking the homepage
-        try:
-            if [v for v in json.load(open(path, encoding="utf-8"))["videos"] if v["id"] not in EXCLUDE]:  # real videos only
-                print("feed unavailable, keeping existing file:", err); sys.exit(0)
-        except (FileNotFoundError, ValueError, KeyError):
-            pass
-        print("feed unavailable, using logo intro:", err)
+        print("feed unavailable, using the hand-kept list:", err)
         videos = FALLBACK
     data = json.dumps({"channel": f"https://www.youtube.com/channel/{CHANNEL_ID}", "videos": videos}, ensure_ascii=False, indent=1)
     try:

@@ -192,6 +192,7 @@
     fetch(yt.getAttribute('data-src'), { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (d) {
       var vids = (d.videos || []).slice(0, 3);
       if (!vids.length) return;
+      if (vids[0].short) yt.className += ' shorts';  // vertical cards + player for Shorts
       vids.forEach(function (v) {
         var b = document.createElement('button');
         b.className = 'yt-card'; b.type = 'button';
