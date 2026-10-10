@@ -19,9 +19,9 @@ FALLBACK = [{"id": i, "title": t, "published": "2026-10-09", "short": True, "thu
     ("PAtfMi8S1CM", "POV: você mora em Miami"),
     ("L4lcRGj8ub0", "POV: domingo em Fort Lauderdale"),
     ("yA1skeCN1Gk", "POV: você mora em Orlando"),
-    ("k6bhpnbb1hs", "Comprar imóvel nos EUA dá green card? A resposta direta"),
-    ("ohxE_rDBbtg", "Quanto custa uma casa na Flórida em 2026? Em dólar e em reais"),
-    ("jezSK5BgtbI", "Vale a pena investir em imóvel nos EUA? Prós, contras e números"),
+    ("UstQX5Cdcig", "Comprar imóvel nos EUA dá green card? A resposta direta"),
+    ("mBLV3mBYycA", "Quanto custa uma casa na Flórida em 2026? Em dólar e em reais"),
+    ("apePjx5YJ-c", "Vale a pena investir em imóvel nos EUA? Prós, contras e números"),
 ]]
 
 def fetch():
