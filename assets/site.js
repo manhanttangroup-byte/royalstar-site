@@ -214,3 +214,31 @@
     }).catch(function () {});
   }
 })();
+
+// ---- buying-process page: one step plays at a time; buttons replace the native <audio> controls when JS runs.
+(function () {
+  var steps = document.querySelectorAll('.step .play');
+  if (!steps.length) return;
+  document.documentElement.classList.add('js-audio');
+  var all = document.querySelectorAll('.step-audio, .full-player audio');
+  function stopOthers(except) {
+    all.forEach(function (a) { if (a !== except && !a.paused) a.pause(); });
+  }
+  var full = document.querySelector('.full-player audio');
+  if (full) full.addEventListener('play', function () { stopOthers(full); });
+  steps.forEach(function (b) {
+    var li = b.closest('.step'), a = li.querySelector('audio'), t = b.querySelector('.play-t'), ico = b.firstElementChild;
+    function ui(on) {
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      t.textContent = on ? b.dataset.p : b.dataset.l; ico.textContent = on ? '❚❚' : '▶';
+      li.classList.toggle('playing', on);
+    }
+    b.hidden = false;
+    b.addEventListener('click', function () {
+      if (a.paused) { stopOthers(a); a.play().catch(function () { li.classList.add('audio-fail'); }); } else a.pause();
+    });
+    a.addEventListener('play', function () { stopOthers(a); ui(true); });
+    a.addEventListener('pause', function () { ui(false); });
+    a.addEventListener('ended', function () { ui(false); });
+  });
+})();

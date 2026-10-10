@@ -300,12 +300,21 @@
   </url>
   <url>
     <loc>https://royalstarcorp.com/buy-a-home/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/buy-a-home/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/comprar-casa-na-florida/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/comprar-casa-na-florida/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://royalstarcorp.com/es/comprar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/buy-a-home/"/>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/buying-process/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/buying-process/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/processo-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/processo-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://royalstarcorp.com/es/proceso-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/buying-process/"/>
   </url>
   <url>
     <loc>https://royalstarcorp.com/contact/</loc>
@@ -474,7 +483,7 @@
   </url>
   <url>
     <loc>https://royalstarcorp.com/es/comprar/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/buy-a-home/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/comprar-casa-na-florida/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/comprar-casa-na-florida/"/>
@@ -527,6 +536,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/privacy/"/>
   </url>
   <url>
+    <loc>https://royalstarcorp.com/es/proceso-de-compra/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/buying-process/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/processo-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/processo-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://royalstarcorp.com/es/proceso-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/buying-process/"/>
+  </url>
+  <url>
     <loc>https://royalstarcorp.com/es/sobre-rui/</loc>
     <lastmod>2026-10-08</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/about/"/>
@@ -564,7 +582,7 @@
   </url>
   <url>
     <loc>https://royalstarcorp.com/guides/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/guia/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/guia/"/>
@@ -994,7 +1012,7 @@
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/comprar-casa-na-florida/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/buy-a-home/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/comprar-casa-na-florida/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/comprar-casa-na-florida/"/>
@@ -1021,7 +1039,7 @@
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/guia/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/guides/"/>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/guia/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/guia/"/>
@@ -1141,6 +1159,15 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/privacidade/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://royalstarcorp.com/es/privacidad/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://royalstarcorp.com/pt/processo-de-compra/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://royalstarcorp.com/buying-process/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://royalstarcorp.com/pt/processo-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://royalstarcorp.com/pt/processo-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://royalstarcorp.com/es/proceso-de-compra/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://royalstarcorp.com/buying-process/"/>
   </url>
   <url>
     <loc>https://royalstarcorp.com/pt/sobre/</loc>
