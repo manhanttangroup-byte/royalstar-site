@@ -14,12 +14,13 @@
     if (real(ADS_ID)) gtag('config', ADS_ID);
   }
   var RS = window.RS || {};
+  setTimeout(function () { firstTouch(); }, 0);
   function tr(en, pt, es) { return RS.lang === 'pt' ? pt : RS.lang === 'es' ? es : en; }  // UI text in the page language
   var LEADS_URL = 'https://script.google.com/macros/s/AKfycbzIgof3ehZQGZ-uN2R-G_j1KzunlzAWucOWLKAvedQ3aTxXCBhShZLj_Vwnl8mqQiRreg/exec'; // Google Apps Script: saves to "Royal Star — Leads do site" sheet + emails Rui
   function sendLead(fields) {  // fire-and-forget; works even as the page navigates to WhatsApp
     try {
       var p = new URLSearchParams(location.search), body = new URLSearchParams(fields);
-      ['utm_source', 'utm_campaign', 'utm_content'].forEach(function (k) { if (p.get(k)) body.set(k, p.get(k)); });
+      var u = firstTouch(); ['utm_source', 'utm_campaign', 'utm_content'].forEach(function (k) { if (u[k]) body.set(k, u[k]); });
       body.set('pagina', location.pathname); body.set('lang', RS.lang || '');
       if (!(navigator.sendBeacon && navigator.sendBeacon(LEADS_URL, body)))
         fetch(LEADS_URL, { method: 'POST', mode: 'no-cors', body: body, keepalive: true });
@@ -27,6 +28,19 @@
     } catch (e) {}
   }
   function convert() { if (real(ADS_ID) && real(ADS_LABEL)) gtag('event', 'conversion', { send_to: ADS_ID + '/' + ADS_LABEL }); }
+  // first-touch attribution: a visitor from an ad/QR/YouTube link who browses 5 pages before writing still counts for that link.
+  // Sheet columns stay the same: medium and click id ride along inside utm_source ("google / cpc / gclid").
+  function firstTouch() {
+    var q = new URLSearchParams(location.search), u = {};
+    if (q.get('utm_source') || q.get('gclid') || q.get('fbclid')) {
+      u = { utm_source: [q.get('utm_source') || (q.get('gclid') ? 'google' : 'facebook'), q.get('utm_medium'), q.get('gclid') ? 'gclid' : q.get('fbclid') ? 'fbclid' : '']
+              .filter(Boolean).join(' / '), utm_campaign: q.get('utm_campaign') || '', utm_content: q.get('utm_content') || '', t: Date.now() };
+      try { var old = JSON.parse(store('rs_ft') || 'null'); if (!old || Date.now() - old.t > 2592e6) store('rs_ft', JSON.stringify(u)); else u = old; } catch (e) {}
+      return u;
+    }
+    try { u = JSON.parse(store('rs_ft') || '{}'); } catch (e) {}
+    return u.t && Date.now() - u.t < 2592e6 ? u : {};
+  }
   function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) {} }
 
   // ---- lead pop-up: city -> phone (lead saved here) -> name/email -> WhatsApp/call. Extra to the contact forms.
