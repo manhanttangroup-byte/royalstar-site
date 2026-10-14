@@ -199,3 +199,5 @@ footer a{color:#fff}
 .play:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .js-audio .step-audio{display:none}
 .js-audio .audio-fail .step-audio{display:block}
+
+.city-video{max-width:300px;margin:8px auto 0}.city-video .yt-card img,.city-video .yt-frame{aspect-ratio:9/16}.city-video .yt-play{top:45%}

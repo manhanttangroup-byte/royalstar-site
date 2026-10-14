@@ -200,6 +200,17 @@
       setTimeout(function () { location.href = 'https://wa.me/' + (RS.wa || '19548508640') + '?text=' + encodeURIComponent(msg); }, 150);
     });
   }
+  // ---- single video cards (city pages): load the player only on tap
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('button[data-yt]');
+    if (!b) return;
+    var f = document.createElement('iframe'), id = b.getAttribute('data-yt');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
+    f.title = b.getAttribute('aria-label'); f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true;
+    f.className = 'yt-frame'; b.replaceWith(f);
+    gtag('event', 'video_play', { video_id: id, page_key: RS.key, page_lang: RS.lang });
+  });
+
   // ---- latest YouTube videos (videos.json is refreshed every 3h by a GitHub Action from the channel feed)
   var yt = document.getElementById('yt-latest');
   if (yt && window.fetch) {
